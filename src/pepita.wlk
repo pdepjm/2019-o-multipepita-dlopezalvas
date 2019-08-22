@@ -1,6 +1,6 @@
 object pepita {
 	var energia = 100
-
+      
 	method estaCansada() {
 		return energia < 50
 	}
@@ -11,6 +11,10 @@ object pepita {
 
 	method come(comida) {
 		energia = energia + comida.energiaQueOtorga()
+	}
+	
+	method estaFeliz(){
+		return energia.between(500, 1000)
 	}
 }
 
