@@ -16,6 +16,12 @@ object pepita {
 	method estaFeliz(){
 		return energia.between(500, 1000)
 	}
+	
+	method salirAComer(){
+		self.vola(5)
+		self.come(alpiste)
+		self.vola(5)
+	}
 }
 
 object alpiste {
