@@ -17,6 +17,16 @@ object pepita {
 		return energia.between(500, 1000)
 	}
 	
+	/*method baseQuiereVolar(){
+		return energia / 5	
+	}
+	
+	method cuantoQuiereVolar(){
+		if(energia.between(300,400)){
+			return self.baseQuiereVolar()+10
+		}if ()
+	}*/
+	
 	method salirAComer(){
 		self.vola(5)
 		self.come(alpiste)
@@ -40,4 +50,43 @@ object manzana {
 	method energiaQueOtorga() { 
 		return 50
 	}	
+}
+
+object mijo {
+	var energiaMijo 
+	
+	method mojarse(){
+		energiaMijo = 15
+	}
+	
+	method secarse(){
+		energiaMijo = 20
+	}
+	method energiaQueOtorga(){
+		return energiaMijo
+	}
+}
+
+object canelones{
+	var energiaCanelones = 20
+	
+	method agregarSalsa(){
+		energiaCanelones += 5
+	}
+	
+	method quitarSalsa(){
+		energiaCanelones -= 5
+	}
+	
+	method agregarQueso(){
+		energiaCanelones += 7
+	}
+	
+	method quitarQueso(){
+		energiaCanelones -= 7
+	}
+	
+	method energiaQueOtorga(){
+		return energiaCanelones
+	}
 }
