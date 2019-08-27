@@ -1,5 +1,6 @@
 object pepita {
 	var energia = 100
+	var baseKm 
       
 	method estaCansada() {
 		return energia < 50
@@ -17,16 +18,29 @@ object pepita {
 		return energia.between(500, 1000)
 	}
 	
-	/*method baseQuiereVolar(){
-		return energia / 5	
+	method baseDeKm() {
+		baseKm = energia / 5
+	}
+	
+	method estaEntre(){
+		if (energia.between(300,400)){
+			baseKm += 10
+		}
+	}
+	
+	method multiploDe(){
+		if(energia % 20 == 0){
+			baseKm += 15
+		}
 	}
 	
 	method cuantoQuiereVolar(){
-		if(energia.between(300,400)){
-			return self.baseQuiereVolar()+10
-		}if ()
-	}*/
-	
+		self.baseDeKm()
+		self.estaEntre()
+		self.multiploDe()
+		return baseKm
+	}
+
 	method salirAComer(){
 		self.vola(5)
 		self.come(alpiste)
