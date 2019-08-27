@@ -46,6 +46,15 @@ object pepita {
 		self.come(alpiste)
 		self.vola(5)
 	}
+	
+	method haceLoQueQuieras(){
+		if(self.estaCansada()){
+			self.come(alpiste)
+		}
+		if(self.estaFeliz()){
+			self.vola(8)
+		}
+	}
 }
 
 object alpiste {
