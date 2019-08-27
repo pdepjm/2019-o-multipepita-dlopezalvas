@@ -113,3 +113,13 @@ object canelones{
 		return energiaCanelones
 	}
 }
+
+object roque{
+	
+	method entrenar(ave){
+		ave.vola(5)
+		ave.come(alpiste)
+		ave.vola(5)
+		ave.haceLoQueQuieras()
+	}
+}
